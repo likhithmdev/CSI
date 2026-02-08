@@ -1,0 +1,60 @@
+[
+    {
+        "id": "flow1",
+        "type": "tab",
+        "label": "Patient Monitor Dashboard",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "mqtt-in",
+        "type": "mqtt in",
+        "z": "flow1",
+        "name": "CSI Data",
+        "topic": "csi/data",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "broker",
+        "x": 100,
+        "y": 100,
+        "wires": [["debug"]]
+    },
+    {
+        "id": "debug",
+        "type": "debug",
+        "z": "flow1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 300,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "broker",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "Local MQTT",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    }
+]
