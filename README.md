@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NonContact-Patient-Monitor
 
 This project implements a non-contact patient monitoring system using ESP32 devices for CSI (Channel State Information) transmission and reception, a Python backend for processing, and a Node-RED dashboard for visualization.
@@ -16,3 +17,6 @@ This project implements a non-contact patient monitoring system using ESP32 devi
 ## License
 
 [Add license information here]
+=======
+# CSI
+>>>>>>> 085d10ada309ee8f5de2cb6c6152d0dc8d3ecbb2
